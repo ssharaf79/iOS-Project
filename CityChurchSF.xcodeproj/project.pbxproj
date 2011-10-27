@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C31EF9113E396C800CC3E87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C31EF9013E396C800CC3E87 /* UIKit.framework */; };
+		1C31EF9313E396C800CC3E87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C31EF9213E396C800CC3E87 /* Foundation.framework */; };
+		1C31EF9513E396C800CC3E87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C31EF9413E396C800CC3E87 /* CoreGraphics.framework */; };
+		1C31EF9B13E396C800CC3E87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EF9913E396C800CC3E87 /* InfoPlist.strings */; };
+		1C31EF9E13E396C800CC3E87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C31EF9D13E396C800CC3E87 /* main.m */; };
+		1C31EFA113E396C800CC3E87 /* CityChurchSFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C31EFA013E396C800CC3E87 /* CityChurchSFAppDelegate.m */; };
+		1C31EFA413E396C800CC3E87 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFA213E396C800CC3E87 /* MainWindow.xib */; };
+		1C31EFAD13E3984A00CC3E87 /* CityHomePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C31EFAB13E3984A00CC3E87 /* CityHomePage.m */; };
+		1C31EFAE13E3984A00CC3E87 /* CityHomePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFAC13E3984A00CC3E87 /* CityHomePage.xib */; };
+		1C31EFB213E39B2100CC3E87 /* CityChurchImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFB113E39B2100CC3E87 /* CityChurchImage1.png */; };
+		1C31EFB613E39D9D00CC3E87 /* ServiceLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C31EFB413E39D9D00CC3E87 /* ServiceLocations.m */; };
+		1C31EFB713E39D9D00CC3E87 /* ServiceLocations.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFB513E39D9D00CC3E87 /* ServiceLocations.xib */; };
+		1C31EFB913E39FC000CC3E87 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C31EFB813E39FC000CC3E87 /* MapKit.framework */; };
+		1C31EFBB13E3A3F500CC3E87 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C31EFBA13E3A3F500CC3E87 /* CoreLocation.framework */; };
+		1C31EFBD13E3A5FC00CC3E87 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFBC13E3A5FC00CC3E87 /* house.png */; };
+		1C31EFBF13E3A61F00CC3E87 /* world.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFBE13E3A61F00CC3E87 /* world.png */; };
+		1C31EFC213E3B88200CC3E87 /* CityMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C31EFC113E3B88200CC3E87 /* CityMapAnnotation.m */; };
+		1C31EFC913E48CE800CC3E87 /* CityChurchMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C31EFC713E48CE800CC3E87 /* CityChurchMedia.m */; };
+		1C31EFCA13E48CE800CC3E87 /* CityChurchMedia.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFC813E48CE800CC3E87 /* CityChurchMedia.xib */; };
+		1C31EFCC13E48FBF00CC3E87 /* speaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFCB13E48FBF00CC3E87 /* speaker.png */; };
+		1C3C2D871418426F00A13663 /* ChurchCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C2D861418426F00A13663 /* ChurchCalendar.m */; };
+		1C595DBB1429AE41006E6F4E /* IBTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C595DB91429AE40006E6F4E /* IBTableController.m */; };
+		1C595DBC1429AE41006E6F4E /* IBTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C595DBA1429AE40006E6F4E /* IBTableController.xib */; };
+		1CCCD2D0142ED31D00495CD2 /* ccsf_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1CCCD2CF142ED31D00495CD2 /* ccsf_logo.jpg */; };
+		1CCCD2D6142EDECC00495CD2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CCCD2D5142EDECB00495CD2 /* icon.png */; };
+		1CCCD2D8142EDFC000495CD2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CCCD2D7142EDFC000495CD2 /* Default.png */; };
+		1CE52A091432444600F32D6C /* ChurchContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE52A071432444600F32D6C /* ChurchContacts.m */; };
+		1CE52A0A1432444600F32D6C /* ChurchContacts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE52A081432444600F32D6C /* ChurchContacts.xib */; };
+		1CE52A0C14324BCC00F32D6C /* contacts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CE52A0B14324BCC00F32D6C /* contacts.strings */; };
+		1CE6CFBD1404AD7F00EB2E0A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE6CFBC1404AD7F00EB2E0A /* CoreAudio.framework */; };
+		1CE6CFC01404AEC900EB2E0A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE6CFBF1404AEC900EB2E0A /* AudioToolbox.framework */; };
+		1CF8EEBB14205C7E00E7E6BF /* newspaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8EEBA14205C7E00E7E6BF /* newspaper.png */; };
+		1CF8EEBF14205E9200E7E6BF /* FeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8EEBE14205E9200E7E6BF /* FeedParser.m */; };
+		1CF8EEC31420698F00E7E6BF /* PlaySermon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8EEC11420698F00E7E6BF /* PlaySermon.m */; };
+		1CF8EEC41420698F00E7E6BF /* PlaySermon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8EEC21420698F00E7E6BF /* PlaySermon.xib */; };
+		1CF8EED31422F52800E7E6BF /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8EED21422F52800E7E6BF /* splash.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C31EF8C13E396C700CC3E87 /* CityChurchSF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityChurchSF.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C31EF9013E396C800CC3E87 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1C31EF9213E396C800CC3E87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1C31EF9413E396C800CC3E87 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1C31EF9813E396C800CC3E87 /* CityChurchSF-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CityChurchSF-Info.plist"; sourceTree = "<group>"; };
+		1C31EF9A13E396C800CC3E87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1C31EF9C13E396C800CC3E87 /* CityChurchSF-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CityChurchSF-Prefix.pch"; sourceTree = "<group>"; };
+		1C31EF9D13E396C800CC3E87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C31EF9F13E396C800CC3E87 /* CityChurchSFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityChurchSFAppDelegate.h; sourceTree = "<group>"; };
+		1C31EFA013E396C800CC3E87 /* CityChurchSFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityChurchSFAppDelegate.m; sourceTree = "<group>"; };
+		1C31EFA313E396C800CC3E87 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		1C31EFAA13E3984A00CC3E87 /* CityHomePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityHomePage.h; sourceTree = "<group>"; };
+		1C31EFAB13E3984A00CC3E87 /* CityHomePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityHomePage.m; sourceTree = "<group>"; };
+		1C31EFAC13E3984A00CC3E87 /* CityHomePage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityHomePage.xib; sourceTree = "<group>"; };
+		1C31EFB113E39B2100CC3E87 /* CityChurchImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityChurchImage1.png; sourceTree = "<group>"; };
+		1C31EFB313E39D9C00CC3E87 /* ServiceLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceLocations.h; sourceTree = "<group>"; };
+		1C31EFB413E39D9D00CC3E87 /* ServiceLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceLocations.m; sourceTree = "<group>"; };
+		1C31EFB513E39D9D00CC3E87 /* ServiceLocations.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceLocations.xib; sourceTree = "<group>"; };
+		1C31EFB813E39FC000CC3E87 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1C31EFBA13E3A3F500CC3E87 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1C31EFBC13E3A5FC00CC3E87 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
+		1C31EFBE13E3A61F00CC3E87 /* world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = world.png; sourceTree = "<group>"; };
+		1C31EFC013E3B88200CC3E87 /* CityMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityMapAnnotation.h; sourceTree = "<group>"; };
+		1C31EFC113E3B88200CC3E87 /* CityMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityMapAnnotation.m; sourceTree = "<group>"; };
+		1C31EFC613E48CE800CC3E87 /* CityChurchMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityChurchMedia.h; sourceTree = "<group>"; };
+		1C31EFC713E48CE800CC3E87 /* CityChurchMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityChurchMedia.m; sourceTree = "<group>"; };
+		1C31EFC813E48CE800CC3E87 /* CityChurchMedia.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityChurchMedia.xib; sourceTree = "<group>"; };
+		1C31EFCB13E48FBF00CC3E87 /* speaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speaker.png; sourceTree = "<group>"; };
+		1C3C2D851418426F00A13663 /* ChurchCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChurchCalendar.h; sourceTree = "<group>"; };
+		1C3C2D861418426F00A13663 /* ChurchCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChurchCalendar.m; sourceTree = "<group>"; };
+		1C595DB81429AE3F006E6F4E /* IBTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBTableController.h; sourceTree = "<group>"; };
+		1C595DB91429AE40006E6F4E /* IBTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBTableController.m; sourceTree = "<group>"; };
+		1C595DBA1429AE40006E6F4E /* IBTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IBTableController.xib; sourceTree = "<group>"; };
+		1CCCD2CF142ED31D00495CD2 /* ccsf_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ccsf_logo.jpg; sourceTree = "<group>"; };
+		1CCCD2D5142EDECB00495CD2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		1CCCD2D7142EDFC000495CD2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1CE52A061432444600F32D6C /* ChurchContacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChurchContacts.h; sourceTree = "<group>"; };
+		1CE52A071432444600F32D6C /* ChurchContacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChurchContacts.m; sourceTree = "<group>"; };
+		1CE52A081432444600F32D6C /* ChurchContacts.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChurchContacts.xib; sourceTree = "<group>"; };
+		1CE52A0B14324BCC00F32D6C /* contacts.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = contacts.strings; sourceTree = "<group>"; };
+		1CE6CFBC1404AD7F00EB2E0A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		1CE6CFBF1404AEC900EB2E0A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1CF8EEBA14205C7E00E7E6BF /* newspaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newspaper.png; sourceTree = "<group>"; };
+		1CF8EEBD14205E9200E7E6BF /* FeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedParser.h; sourceTree = "<group>"; };
+		1CF8EEBE14205E9200E7E6BF /* FeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedParser.m; sourceTree = "<group>"; };
+		1CF8EEC01420698F00E7E6BF /* PlaySermon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaySermon.h; sourceTree = "<group>"; };
+		1CF8EEC11420698F00E7E6BF /* PlaySermon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaySermon.m; sourceTree = "<group>"; };
+		1CF8EEC21420698F00E7E6BF /* PlaySermon.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaySermon.xib; sourceTree = "<group>"; };
+		1CF8EED21422F52800E7E6BF /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C31EF8913E396C700CC3E87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE6CFC01404AEC900EB2E0A /* AudioToolbox.framework in Frameworks */,
+				1CE6CFBD1404AD7F00EB2E0A /* CoreAudio.framework in Frameworks */,
+				1C31EFBB13E3A3F500CC3E87 /* CoreLocation.framework in Frameworks */,
+				1C31EFB913E39FC000CC3E87 /* MapKit.framework in Frameworks */,
+				1C31EF9113E396C800CC3E87 /* UIKit.framework in Frameworks */,
+				1C31EF9313E396C800CC3E87 /* Foundation.framework in Frameworks */,
+				1C31EF9513E396C800CC3E87 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C31EF8113E396C700CC3E87 = {
+			isa = PBXGroup;
+			children = (
+				1CE6CFBF1404AEC900EB2E0A /* AudioToolbox.framework */,
+				1CE6CFBC1404AD7F00EB2E0A /* CoreAudio.framework */,
+				1C31EF9613E396C800CC3E87 /* CityChurchSF */,
+				1C31EF8F13E396C800CC3E87 /* Frameworks */,
+				1C31EF8D13E396C700CC3E87 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C31EF8D13E396C700CC3E87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C31EF8C13E396C700CC3E87 /* CityChurchSF.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C31EF8F13E396C800CC3E87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C31EFBA13E3A3F500CC3E87 /* CoreLocation.framework */,
+				1C31EFB813E39FC000CC3E87 /* MapKit.framework */,
+				1C31EF9013E396C800CC3E87 /* UIKit.framework */,
+				1C31EF9213E396C800CC3E87 /* Foundation.framework */,
+				1C31EF9413E396C800CC3E87 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C31EF9613E396C800CC3E87 /* CityChurchSF */ = {
+			isa = PBXGroup;
+			children = (
+				1C31EF9F13E396C800CC3E87 /* CityChurchSFAppDelegate.h */,
+				1C31EFA013E396C800CC3E87 /* CityChurchSFAppDelegate.m */,
+				1C31EFA213E396C800CC3E87 /* MainWindow.xib */,
+				1CF8EEC21420698F00E7E6BF /* PlaySermon.xib */,
+				1C31EF9713E396C800CC3E87 /* Supporting Files */,
+				1C31EFAA13E3984A00CC3E87 /* CityHomePage.h */,
+				1C31EFAB13E3984A00CC3E87 /* CityHomePage.m */,
+				1C31EFAC13E3984A00CC3E87 /* CityHomePage.xib */,
+				1C31EFB313E39D9C00CC3E87 /* ServiceLocations.h */,
+				1C31EFB413E39D9D00CC3E87 /* ServiceLocations.m */,
+				1C31EFB513E39D9D00CC3E87 /* ServiceLocations.xib */,
+				1C31EFC013E3B88200CC3E87 /* CityMapAnnotation.h */,
+				1C31EFC113E3B88200CC3E87 /* CityMapAnnotation.m */,
+				1C31EFC613E48CE800CC3E87 /* CityChurchMedia.h */,
+				1C31EFC713E48CE800CC3E87 /* CityChurchMedia.m */,
+				1C31EFC813E48CE800CC3E87 /* CityChurchMedia.xib */,
+				1C3C2D851418426F00A13663 /* ChurchCalendar.h */,
+				1C3C2D861418426F00A13663 /* ChurchCalendar.m */,
+				1CF8EEBD14205E9200E7E6BF /* FeedParser.h */,
+				1CF8EEBE14205E9200E7E6BF /* FeedParser.m */,
+				1CF8EEC01420698F00E7E6BF /* PlaySermon.h */,
+				1CF8EEC11420698F00E7E6BF /* PlaySermon.m */,
+				1C595DB81429AE3F006E6F4E /* IBTableController.h */,
+				1C595DB91429AE40006E6F4E /* IBTableController.m */,
+				1C595DBA1429AE40006E6F4E /* IBTableController.xib */,
+				1CE52A061432444600F32D6C /* ChurchContacts.h */,
+				1CE52A071432444600F32D6C /* ChurchContacts.m */,
+				1CE52A081432444600F32D6C /* ChurchContacts.xib */,
+			);
+			path = CityChurchSF;
+			sourceTree = "<group>";
+		};
+		1C31EF9713E396C800CC3E87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CCCD2D7142EDFC000495CD2 /* Default.png */,
+				1CCCD2D5142EDECB00495CD2 /* icon.png */,
+				1CCCD2CF142ED31D00495CD2 /* ccsf_logo.jpg */,
+				1CF8EED21422F52800E7E6BF /* splash.png */,
+				1CF8EEBA14205C7E00E7E6BF /* newspaper.png */,
+				1C31EFCB13E48FBF00CC3E87 /* speaker.png */,
+				1C31EFBE13E3A61F00CC3E87 /* world.png */,
+				1C31EFBC13E3A5FC00CC3E87 /* house.png */,
+				1C31EFB113E39B2100CC3E87 /* CityChurchImage1.png */,
+				1C31EF9813E396C800CC3E87 /* CityChurchSF-Info.plist */,
+				1C31EF9913E396C800CC3E87 /* InfoPlist.strings */,
+				1C31EF9C13E396C800CC3E87 /* CityChurchSF-Prefix.pch */,
+				1C31EF9D13E396C800CC3E87 /* main.m */,
+				1CE52A0B14324BCC00F32D6C /* contacts.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C31EF8B13E396C700CC3E87 /* CityChurchSF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C31EFA713E396C800CC3E87 /* Build configuration list for PBXNativeTarget "CityChurchSF" */;
+			buildPhases = (
+				1C31EF8813E396C700CC3E87 /* Sources */,
+				1C31EF8913E396C700CC3E87 /* Frameworks */,
+				1C31EF8A13E396C700CC3E87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CityChurchSF;
+			productName = CityChurchSF;
+			productReference = 1C31EF8C13E396C700CC3E87 /* CityChurchSF.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C31EF8313E396C700CC3E87 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1C31EF8613E396C700CC3E87 /* Build configuration list for PBXProject "CityChurchSF" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1C31EF8113E396C700CC3E87;
+			productRefGroup = 1C31EF8D13E396C700CC3E87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C31EF8B13E396C700CC3E87 /* CityChurchSF */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C31EF8A13E396C700CC3E87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C31EF9B13E396C800CC3E87 /* InfoPlist.strings in Resources */,
+				1C31EFA413E396C800CC3E87 /* MainWindow.xib in Resources */,
+				1C31EFAE13E3984A00CC3E87 /* CityHomePage.xib in Resources */,
+				1C31EFB213E39B2100CC3E87 /* CityChurchImage1.png in Resources */,
+				1C31EFB713E39D9D00CC3E87 /* ServiceLocations.xib in Resources */,
+				1C31EFBD13E3A5FC00CC3E87 /* house.png in Resources */,
+				1C31EFBF13E3A61F00CC3E87 /* world.png in Resources */,
+				1C31EFCA13E48CE800CC3E87 /* CityChurchMedia.xib in Resources */,
+				1C31EFCC13E48FBF00CC3E87 /* speaker.png in Resources */,
+				1CF8EEBB14205C7E00E7E6BF /* newspaper.png in Resources */,
+				1CF8EEC41420698F00E7E6BF /* PlaySermon.xib in Resources */,
+				1CF8EED31422F52800E7E6BF /* splash.png in Resources */,
+				1C595DBC1429AE41006E6F4E /* IBTableController.xib in Resources */,
+				1CCCD2D0142ED31D00495CD2 /* ccsf_logo.jpg in Resources */,
+				1CCCD2D6142EDECC00495CD2 /* icon.png in Resources */,
+				1CCCD2D8142EDFC000495CD2 /* Default.png in Resources */,
+				1CE52A0A1432444600F32D6C /* ChurchContacts.xib in Resources */,
+				1CE52A0C14324BCC00F32D6C /* contacts.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C31EF8813E396C700CC3E87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C31EF9E13E396C800CC3E87 /* main.m in Sources */,
+				1C31EFA113E396C800CC3E87 /* CityChurchSFAppDelegate.m in Sources */,
+				1C31EFAD13E3984A00CC3E87 /* CityHomePage.m in Sources */,
+				1C31EFB613E39D9D00CC3E87 /* ServiceLocations.m in Sources */,
+				1C31EFC213E3B88200CC3E87 /* CityMapAnnotation.m in Sources */,
+				1C31EFC913E48CE800CC3E87 /* CityChurchMedia.m in Sources */,
+				1C3C2D871418426F00A13663 /* ChurchCalendar.m in Sources */,
+				1CF8EEBF14205E9200E7E6BF /* FeedParser.m in Sources */,
+				1CF8EEC31420698F00E7E6BF /* PlaySermon.m in Sources */,
+				1C595DBB1429AE41006E6F4E /* IBTableController.m in Sources */,
+				1CE52A091432444600F32D6C /* ChurchContacts.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1C31EF9913E396C800CC3E87 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C31EF9A13E396C800CC3E87 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1C31EFA213E396C800CC3E87 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C31EFA313E396C800CC3E87 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C31EFA513E396C800CC3E87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1C31EFA613E396C800CC3E87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		1C31EFA813E396C800CC3E87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CityChurchSF/CityChurchSF-Prefix.pch";
+				INFOPLIST_FILE = "CityChurchSF/CityChurchSF-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1C31EFA913E396C800CC3E87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CityChurchSF/CityChurchSF-Prefix.pch";
+				INFOPLIST_FILE = "CityChurchSF/CityChurchSF-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C31EF8613E396C700CC3E87 /* Build configuration list for PBXProject "CityChurchSF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C31EFA513E396C800CC3E87 /* Debug */,
+				1C31EFA613E396C800CC3E87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C31EFA713E396C800CC3E87 /* Build configuration list for PBXNativeTarget "CityChurchSF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C31EFA813E396C800CC3E87 /* Debug */,
+				1C31EFA913E396C800CC3E87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C31EF8313E396C700CC3E87 /* Project object */;
+}
