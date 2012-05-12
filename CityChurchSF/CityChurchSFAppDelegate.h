@@ -12,11 +12,11 @@
 
 @interface CityChurchSFAppDelegate : NSObject <UIApplicationDelegate> {
 
-    UIImageView *splashView;
+    UINavigationController *navController;    
     UIWindow *window;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property(retain, nonatomic)UIImageView *splashView;
+@property (nonatomic, retain) IBOutlet UINavigationController *navController;
 
 @end

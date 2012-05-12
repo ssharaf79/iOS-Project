@@ -13,17 +13,7 @@
 
 @implementation ServiceLocations
 
--(id)init 
-{
-    [super initWithNibName:nil bundle:nil];
-    UITabBarItem *tbi = [self tabBarItem];
-    [tbi setTitle:@"Locations"];
-    UIImage *image = [UIImage imageNamed:@"world.png"];
-    [tbi setImage:image];
-    
-    return self;
-    
-}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -35,6 +25,8 @@
 
 - (void)dealloc
 {
+    [locationManager release];
+    [annArray release];
     [super dealloc];
 }
 
@@ -47,39 +39,6 @@
 }
 
 #pragma mark - View lifecycle
-/**
- *The visible area of a MKMapView is described using MKCoordinateRegion, which consists of two values:
- 
- center (the center point of the region), and
- span (the size of the visible area around center).
- 
- The center point should be obvious (it's the center point of the region.)
- 
- However, span (which is a MKCoordinateSpan) consists of:
- 
- latitudeDelta (the vertical distance represented by the region), and
- longitudeDelta (the horizontal distance represented by the region).
- 
- A brief example. Here's a toy MKCoordinateRegion:
- 
- center:
- latitude: 0
- longitude: 0
- span:
- latitudeDelta: 8
- longitudeDelta: 6
- 
- The region could be described using its min and max coordinates as follows:
- 
- min coordinate (lower left-hand point):
- latitude: -4
- longitude: -3
- max coordinate (upper right-hand point):
- latitude: 4
- longitude: 3
- 
- So, you can specify zoom levels around a center point by using an appropriately sized MKCoordinateSpan. 
- */
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -124,7 +83,7 @@
                                                                             title:@"CityChurch - Mission Loc" subTitle:@"3351 23rd St."];
     
     CityMapAnnotation *o_annotation = [[CityMapAnnotation alloc]initWithCoordinates:o_coord 
-                                                                              title:@"CityChurch - Office Loc" subTitle:@"1480 Franklin St."];
+                                                                              title:@"CityChurch - Office Loc" subTitle:@"1388 Sutter Street Suite 412."];
 
     //annArray = [[NSArray alloc]initWithObjects:r_annotation, m_annotation, nil];
     
@@ -132,40 +91,17 @@
     [mapView addAnnotation:o_annotation];
     [mapView addAnnotation:m_annotation];
     
+    //
+    [r_annotation release];
+    [m_annotation release];
+    [o_annotation release];
+    //
     [mapView sizeToFit];
     //return YES;
     // Do any additional setup after loading the view from its nib.
      
 }
 ///////////////////////////////////
-/*
--(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation 
-{
-    MKPinAnnotationView *pinView = nil;
-    
-    if(annotation != mapView.userLocation) 
-    {
-        static NSString *defaultID = @"russianctr";
-        pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:defaultID];
-        
-        if(pinView == nil) 
-        {
-            pinView = [[MKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:defaultID];
-        }
-        pinView.animatesDrop = YES;
-        pinView.canShowCallout = YES;
-        pinView.pinColor = MKPinAnnotationColorGreen;
-    }
-}
-
--(void)mapView:(MKMapView *)mv didAddAnnotationViews:(NSArray *)views
-{
-    MKAnnotationView *annotationView = [views objectAtIndex:0];
-    id <MKAnnotation> mp = [annotationView annotation];
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance([mp coordinate], 250, 250);
-    //[mv setRegion:region animated:YES];
-}
-*/
 - (void)viewDidUnload
 {
     [super viewDidUnload];

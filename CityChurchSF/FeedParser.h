@@ -17,7 +17,8 @@
 	
 	NSMutableData *responseData;
 	NSMutableArray *items;
-	
+    NSXMLParser *parser;
+	NSURLConnection *connectionInProgress;
 	NSMutableDictionary *item;
 	NSString *currentElement;
 	NSMutableString * currentTitle, * currentDate, * currentSummary, * currentLink, * currentPodcastLink;
@@ -30,6 +31,7 @@
 @property (retain, nonatomic) NSMutableString *currentSummary;
 @property (retain, nonatomic) NSMutableString *currentLink;
 @property (retain, nonatomic) NSMutableString *currentPodcastLink;
+@property (retain, nonatomic) NSXMLParser *parser;
 
 - (void)parseRssFeed:(NSString *)url withDelegate:(id)aDelegate;
 

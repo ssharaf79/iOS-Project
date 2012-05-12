@@ -16,17 +16,28 @@
 @synthesize currentSummary;
 @synthesize currentLink;
 @synthesize currentPodcastLink;
+@synthesize parser;
 
 - (void)parseRssFeed:(NSString *)url withDelegate:(id)aDelegate {
 	[self setDelegate:aDelegate];
     
-	responseData = [[NSMutableData data] retain];
-	NSURL *baseURL = [[NSURL URLWithString:url] retain];
+    NSURL *baseURL = [[NSURL URLWithString:url] retain];
 	
+	NSURLRequest *request = [NSURLRequest requestWithURL:baseURL
+                             cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:30];
 	
-	NSURLRequest *request = [NSURLRequest requestWithURL:baseURL];
-	
-	[[[NSURLConnection alloc] initWithRequest:request delegate:self] autorelease];
+    // Clear out the existing connection if there is one
+    if(connectionInProgress) {
+        [connectionInProgress cancel];
+        [connectionInProgress release];
+    }
+    
+    // Instantiate teh object to hold all incoming data
+    responseData = [[NSMutableData data] retain];
+    
+    // Create and initiate the connection - non blocking
+	connectionInProgress = [[NSURLConnection alloc]initWithRequest:request delegate:self startImmediately:YES];
+    //[[[NSURLConnection alloc] initWithRequest:request delegate:self] autorelease];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
@@ -36,8 +47,6 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
-    //here we are receiving data...so to inspect the received data put log statement here
-    //NSLog(@"---inside feedParser:didReceiveData: %@", data);
     [responseData appendData:data];
 }
 
@@ -47,22 +56,28 @@
 	
     UIAlertView * errorAlert = [[UIAlertView alloc] initWithTitle:@"Error loading content" message:errorString delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [errorAlert show];
+    
+    [errorAlert release];
+    [connectionInProgress release];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
 	self.items = [[NSMutableArray alloc] init];
 	
-	NSXMLParser *rssParser = [[NSXMLParser alloc] initWithData:responseData];
+	parser = [[NSXMLParser alloc] initWithData:responseData];
 	
-	[rssParser setDelegate:self];
+	[parser setDelegate:self];
 	
-	[rssParser parse];
+	[parser parse];
+    
+    
 }
 
 #pragma mark rssParser methods
 
 - (void)parserDidStartDocument:(NSXMLParser *)parser {
+    
 }
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
@@ -95,30 +110,20 @@
         [item setObject:self.currentSummary forKey:@"summary"];
 		[item setObject:self.currentPodcastLink forKey:@"podcastLink"];
 		[item setObject:self.currentDate forKey:@"pubDate"];
-        NSLog(@"-----Setting self.currentDate to: %@", self.currentDate);
+        //NSLog(@"-----Setting self.currentDate to: %@", self.currentDate);
         //Parse date here
 		
 		////
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        NSDateFormatter *dateFormatter = [[[NSDateFormatter alloc] init]autorelease];
         [dateFormatter setLocale:[[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"] autorelease]];
 
-        ////
-        
-        
         [dateFormatter setDateFormat:@"EEE, dd MMM yyyy HH:mm:ss z"]; 
 		
-        NSLog(@"------------The dateformatter is: %@", dateFormatter);
-           
         NSDate *date = [dateFormatter dateFromString:self.currentDate];
-            
-        NSLog(@"------------The date object is: %@", date);
-            
+        
         [item setObject:date forKey:@"date"];
-   
-
-       // [item setObject:date forKey:@"date"];  
-		
         [items addObject:[item copy]];
+       
     }
 }
 
@@ -160,8 +165,19 @@
 }
 
 - (void)dealloc {
+    [parser release];
+    [item release];
+    //item nil;
 	[items release];
 	[responseData release];
+    
+    [currentElement release];
+    [currentLink release];
+    [currentPodcastLink release];
+    [currentSummary release];
+    [currentDate release];
+    [currentTitle release];
+    
 	[super dealloc];
 }
 @end

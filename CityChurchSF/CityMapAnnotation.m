@@ -38,6 +38,7 @@
 { 
     [title release]; 
     [subtitle release]; 
+    //[coordinate release];
     [super dealloc]; }
 
 @end

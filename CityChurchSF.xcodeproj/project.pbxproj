@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0813C114B249B10040F619 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0813C014B249B10040F619 /* Default.png */; };
+		1C0813C814B24AA30040F619 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C0813C714B24AA30040F619 /* Icon.png */; };
+		1C125B0614D90F4500695103 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C125B0514D90F4500695103 /* AVFoundation.framework */; };
 		1C31EF9113E396C800CC3E87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C31EF9013E396C800CC3E87 /* UIKit.framework */; };
 		1C31EF9313E396C800CC3E87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C31EF9213E396C800CC3E87 /* Foundation.framework */; };
 		1C31EF9513E396C800CC3E87 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C31EF9413E396C800CC3E87 /* CoreGraphics.framework */; };
@@ -14,38 +17,45 @@
 		1C31EF9E13E396C800CC3E87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C31EF9D13E396C800CC3E87 /* main.m */; };
 		1C31EFA113E396C800CC3E87 /* CityChurchSFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C31EFA013E396C800CC3E87 /* CityChurchSFAppDelegate.m */; };
 		1C31EFA413E396C800CC3E87 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFA213E396C800CC3E87 /* MainWindow.xib */; };
-		1C31EFAD13E3984A00CC3E87 /* CityHomePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C31EFAB13E3984A00CC3E87 /* CityHomePage.m */; };
-		1C31EFAE13E3984A00CC3E87 /* CityHomePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFAC13E3984A00CC3E87 /* CityHomePage.xib */; };
 		1C31EFB213E39B2100CC3E87 /* CityChurchImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFB113E39B2100CC3E87 /* CityChurchImage1.png */; };
 		1C31EFB613E39D9D00CC3E87 /* ServiceLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C31EFB413E39D9D00CC3E87 /* ServiceLocations.m */; };
 		1C31EFB713E39D9D00CC3E87 /* ServiceLocations.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFB513E39D9D00CC3E87 /* ServiceLocations.xib */; };
 		1C31EFB913E39FC000CC3E87 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C31EFB813E39FC000CC3E87 /* MapKit.framework */; };
 		1C31EFBB13E3A3F500CC3E87 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C31EFBA13E3A3F500CC3E87 /* CoreLocation.framework */; };
-		1C31EFBD13E3A5FC00CC3E87 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFBC13E3A5FC00CC3E87 /* house.png */; };
-		1C31EFBF13E3A61F00CC3E87 /* world.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFBE13E3A61F00CC3E87 /* world.png */; };
 		1C31EFC213E3B88200CC3E87 /* CityMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C31EFC113E3B88200CC3E87 /* CityMapAnnotation.m */; };
-		1C31EFC913E48CE800CC3E87 /* CityChurchMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C31EFC713E48CE800CC3E87 /* CityChurchMedia.m */; };
-		1C31EFCA13E48CE800CC3E87 /* CityChurchMedia.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFC813E48CE800CC3E87 /* CityChurchMedia.xib */; };
-		1C31EFCC13E48FBF00CC3E87 /* speaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C31EFCB13E48FBF00CC3E87 /* speaker.png */; };
-		1C3C2D871418426F00A13663 /* ChurchCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C2D861418426F00A13663 /* ChurchCalendar.m */; };
-		1C595DBB1429AE41006E6F4E /* IBTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C595DB91429AE40006E6F4E /* IBTableController.m */; };
-		1C595DBC1429AE41006E6F4E /* IBTableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C595DBA1429AE40006E6F4E /* IBTableController.xib */; };
+		1C3A361E14B23FA200648251 /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C3A361914B23FA200648251 /* Calendar.png */; };
+		1C3A361F14B23FA200648251 /* ContactFlow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C3A361A14B23FA200648251 /* ContactFlow.png */; };
+		1C3A362014B23FA200648251 /* Maps2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C3A361B14B23FA200648251 /* Maps2.png */; };
+		1C3A362114B23FA200648251 /* Music.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C3A361C14B23FA200648251 /* Music.png */; };
+		1C3A362B14B2984700648251 /* ChurchBlog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3A362914B2984600648251 /* ChurchBlog.m */; };
+		1C3A362C14B2984700648251 /* ChurchBlog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C3A362A14B2984600648251 /* ChurchBlog.xib */; };
+		1C788BF614AB9786006F9483 /* CommunityGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C788BF414AB9785006F9483 /* CommunityGroup.m */; };
+		1C788BF714AB9786006F9483 /* CommunityGroup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C788BF514AB9785006F9483 /* CommunityGroup.xib */; };
 		1CCCD2D0142ED31D00495CD2 /* ccsf_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1CCCD2CF142ED31D00495CD2 /* ccsf_logo.jpg */; };
-		1CCCD2D6142EDECC00495CD2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CCCD2D5142EDECB00495CD2 /* icon.png */; };
-		1CCCD2D8142EDFC000495CD2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CCCD2D7142EDFC000495CD2 /* Default.png */; };
-		1CE52A091432444600F32D6C /* ChurchContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE52A071432444600F32D6C /* ChurchContacts.m */; };
-		1CE52A0A1432444600F32D6C /* ChurchContacts.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE52A081432444600F32D6C /* ChurchContacts.xib */; };
-		1CE52A0C14324BCC00F32D6C /* contacts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CE52A0B14324BCC00F32D6C /* contacts.strings */; };
-		1CE6CFBD1404AD7F00EB2E0A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE6CFBC1404AD7F00EB2E0A /* CoreAudio.framework */; };
-		1CE6CFC01404AEC900EB2E0A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE6CFBF1404AEC900EB2E0A /* AudioToolbox.framework */; };
-		1CF8EEBB14205C7E00E7E6BF /* newspaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8EEBA14205C7E00E7E6BF /* newspaper.png */; };
+		1CDDD4DE148C119000CA52E1 /* RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDDD4DC148C119000CA52E1 /* RootView.m */; };
+		1CDDD4DF148C119000CA52E1 /* RootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CDDD4DD148C119000CA52E1 /* RootView.xib */; };
+		1CDDD4E7148C121300CA52E1 /* ViewOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDDD4E2148C121300CA52E1 /* ViewOne.m */; };
+		1CDDD4E8148C121300CA52E1 /* ViewOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CDDD4E3148C121300CA52E1 /* ViewOne.xib */; };
+		1CDDD4E9148C121300CA52E1 /* ViewTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDDD4E5148C121300CA52E1 /* ViewTwo.m */; };
+		1CDDD4EA148C121300CA52E1 /* ViewTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CDDD4E6148C121300CA52E1 /* ViewTwo.xib */; };
+		1CE6CFC01404AEC900EB2E0A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE6CFBF1404AEC900EB2E0A /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1CE97C2C14EE2BF50063684D /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CE97C2414EE2BF50063684D /* forward.png */; };
+		1CE97C2D14EE2BF50063684D /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CE97C2514EE2BF50063684D /* pause.png */; };
+		1CE97C2E14EE2BF50063684D /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CE97C2614EE2BF50063684D /* play.png */; };
+		1CE97C2F14EE2BF50063684D /* rewind.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CE97C2714EE2BF50063684D /* rewind.png */; };
+		1CE97C3014EE2BF50063684D /* sound_meter_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CE97C2814EE2BF50063684D /* sound_meter_background.png */; };
+		1CE97C3114EE2BF50063684D /* sound_meter_glare.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CE97C2914EE2BF50063684D /* sound_meter_glare.png */; };
+		1CE97C3214EE2BF50063684D /* volume_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CE97C2A14EE2BF50063684D /* volume_down.png */; };
+		1CE97C3314EE2BF50063684D /* volume_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CE97C2B14EE2BF50063684D /* volume_up.png */; };
 		1CF8EEBF14205E9200E7E6BF /* FeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8EEBE14205E9200E7E6BF /* FeedParser.m */; };
 		1CF8EEC31420698F00E7E6BF /* PlaySermon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF8EEC11420698F00E7E6BF /* PlaySermon.m */; };
 		1CF8EEC41420698F00E7E6BF /* PlaySermon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8EEC21420698F00E7E6BF /* PlaySermon.xib */; };
-		1CF8EED31422F52800E7E6BF /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8EED21422F52800E7E6BF /* splash.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C0813C014B249B10040F619 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1C0813C714B24AA30040F619 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		1C125B0514D90F4500695103 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1C31EF8C13E396C700CC3E87 /* CityChurchSF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityChurchSF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C31EF9013E396C800CC3E87 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1C31EF9213E396C800CC3E87 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,44 +67,48 @@
 		1C31EF9F13E396C800CC3E87 /* CityChurchSFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityChurchSFAppDelegate.h; sourceTree = "<group>"; };
 		1C31EFA013E396C800CC3E87 /* CityChurchSFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityChurchSFAppDelegate.m; sourceTree = "<group>"; };
 		1C31EFA313E396C800CC3E87 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		1C31EFAA13E3984A00CC3E87 /* CityHomePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityHomePage.h; sourceTree = "<group>"; };
-		1C31EFAB13E3984A00CC3E87 /* CityHomePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityHomePage.m; sourceTree = "<group>"; };
-		1C31EFAC13E3984A00CC3E87 /* CityHomePage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityHomePage.xib; sourceTree = "<group>"; };
 		1C31EFB113E39B2100CC3E87 /* CityChurchImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityChurchImage1.png; sourceTree = "<group>"; };
 		1C31EFB313E39D9C00CC3E87 /* ServiceLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceLocations.h; sourceTree = "<group>"; };
 		1C31EFB413E39D9D00CC3E87 /* ServiceLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceLocations.m; sourceTree = "<group>"; };
 		1C31EFB513E39D9D00CC3E87 /* ServiceLocations.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceLocations.xib; sourceTree = "<group>"; };
 		1C31EFB813E39FC000CC3E87 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1C31EFBA13E3A3F500CC3E87 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		1C31EFBC13E3A5FC00CC3E87 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
-		1C31EFBE13E3A61F00CC3E87 /* world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = world.png; sourceTree = "<group>"; };
 		1C31EFC013E3B88200CC3E87 /* CityMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityMapAnnotation.h; sourceTree = "<group>"; };
 		1C31EFC113E3B88200CC3E87 /* CityMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityMapAnnotation.m; sourceTree = "<group>"; };
-		1C31EFC613E48CE800CC3E87 /* CityChurchMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityChurchMedia.h; sourceTree = "<group>"; };
-		1C31EFC713E48CE800CC3E87 /* CityChurchMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityChurchMedia.m; sourceTree = "<group>"; };
-		1C31EFC813E48CE800CC3E87 /* CityChurchMedia.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityChurchMedia.xib; sourceTree = "<group>"; };
-		1C31EFCB13E48FBF00CC3E87 /* speaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speaker.png; sourceTree = "<group>"; };
-		1C3C2D851418426F00A13663 /* ChurchCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChurchCalendar.h; sourceTree = "<group>"; };
-		1C3C2D861418426F00A13663 /* ChurchCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChurchCalendar.m; sourceTree = "<group>"; };
-		1C595DB81429AE3F006E6F4E /* IBTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBTableController.h; sourceTree = "<group>"; };
-		1C595DB91429AE40006E6F4E /* IBTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBTableController.m; sourceTree = "<group>"; };
-		1C595DBA1429AE40006E6F4E /* IBTableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IBTableController.xib; sourceTree = "<group>"; };
+		1C3A361914B23FA200648251 /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar.png; sourceTree = "<group>"; };
+		1C3A361A14B23FA200648251 /* ContactFlow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ContactFlow.png; sourceTree = "<group>"; };
+		1C3A361B14B23FA200648251 /* Maps2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maps2.png; sourceTree = "<group>"; };
+		1C3A361C14B23FA200648251 /* Music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Music.png; sourceTree = "<group>"; };
+		1C3A362814B2984600648251 /* ChurchBlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChurchBlog.h; sourceTree = "<group>"; };
+		1C3A362914B2984600648251 /* ChurchBlog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChurchBlog.m; sourceTree = "<group>"; };
+		1C3A362A14B2984600648251 /* ChurchBlog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChurchBlog.xib; sourceTree = "<group>"; };
+		1C788BF314AB9784006F9483 /* CommunityGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityGroup.h; sourceTree = "<group>"; };
+		1C788BF414AB9785006F9483 /* CommunityGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityGroup.m; sourceTree = "<group>"; };
+		1C788BF514AB9785006F9483 /* CommunityGroup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityGroup.xib; sourceTree = "<group>"; };
 		1CCCD2CF142ED31D00495CD2 /* ccsf_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ccsf_logo.jpg; sourceTree = "<group>"; };
-		1CCCD2D5142EDECB00495CD2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		1CCCD2D7142EDFC000495CD2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		1CE52A061432444600F32D6C /* ChurchContacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChurchContacts.h; sourceTree = "<group>"; };
-		1CE52A071432444600F32D6C /* ChurchContacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChurchContacts.m; sourceTree = "<group>"; };
-		1CE52A081432444600F32D6C /* ChurchContacts.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChurchContacts.xib; sourceTree = "<group>"; };
-		1CE52A0B14324BCC00F32D6C /* contacts.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = contacts.strings; sourceTree = "<group>"; };
-		1CE6CFBC1404AD7F00EB2E0A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		1CDDD4DB148C119000CA52E1 /* RootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootView.h; sourceTree = "<group>"; };
+		1CDDD4DC148C119000CA52E1 /* RootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootView.m; sourceTree = "<group>"; };
+		1CDDD4DD148C119000CA52E1 /* RootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootView.xib; sourceTree = "<group>"; };
+		1CDDD4E1148C121300CA52E1 /* ViewOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewOne.h; sourceTree = "<group>"; };
+		1CDDD4E2148C121300CA52E1 /* ViewOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewOne.m; sourceTree = "<group>"; };
+		1CDDD4E3148C121300CA52E1 /* ViewOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewOne.xib; sourceTree = "<group>"; };
+		1CDDD4E4148C121300CA52E1 /* ViewTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTwo.h; sourceTree = "<group>"; };
+		1CDDD4E5148C121300CA52E1 /* ViewTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTwo.m; sourceTree = "<group>"; };
+		1CDDD4E6148C121300CA52E1 /* ViewTwo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewTwo.xib; sourceTree = "<group>"; };
 		1CE6CFBF1404AEC900EB2E0A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		1CF8EEBA14205C7E00E7E6BF /* newspaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newspaper.png; sourceTree = "<group>"; };
+		1CE97C2414EE2BF50063684D /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
+		1CE97C2514EE2BF50063684D /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		1CE97C2614EE2BF50063684D /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		1CE97C2714EE2BF50063684D /* rewind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rewind.png; sourceTree = "<group>"; };
+		1CE97C2814EE2BF50063684D /* sound_meter_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound_meter_background.png; sourceTree = "<group>"; };
+		1CE97C2914EE2BF50063684D /* sound_meter_glare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound_meter_glare.png; sourceTree = "<group>"; };
+		1CE97C2A14EE2BF50063684D /* volume_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume_down.png; sourceTree = "<group>"; };
+		1CE97C2B14EE2BF50063684D /* volume_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volume_up.png; sourceTree = "<group>"; };
 		1CF8EEBD14205E9200E7E6BF /* FeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedParser.h; sourceTree = "<group>"; };
 		1CF8EEBE14205E9200E7E6BF /* FeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedParser.m; sourceTree = "<group>"; };
 		1CF8EEC01420698F00E7E6BF /* PlaySermon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaySermon.h; sourceTree = "<group>"; };
 		1CF8EEC11420698F00E7E6BF /* PlaySermon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaySermon.m; sourceTree = "<group>"; };
 		1CF8EEC21420698F00E7E6BF /* PlaySermon.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaySermon.xib; sourceTree = "<group>"; };
-		1CF8EED21422F52800E7E6BF /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +116,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C125B0614D90F4500695103 /* AVFoundation.framework in Frameworks */,
 				1CE6CFC01404AEC900EB2E0A /* AudioToolbox.framework in Frameworks */,
-				1CE6CFBD1404AD7F00EB2E0A /* CoreAudio.framework in Frameworks */,
 				1C31EFBB13E3A3F500CC3E87 /* CoreLocation.framework in Frameworks */,
 				1C31EFB913E39FC000CC3E87 /* MapKit.framework in Frameworks */,
 				1C31EF9113E396C800CC3E87 /* UIKit.framework in Frameworks */,
@@ -118,8 +132,6 @@
 		1C31EF8113E396C700CC3E87 = {
 			isa = PBXGroup;
 			children = (
-				1CE6CFBF1404AEC900EB2E0A /* AudioToolbox.framework */,
-				1CE6CFBC1404AD7F00EB2E0A /* CoreAudio.framework */,
 				1C31EF9613E396C800CC3E87 /* CityChurchSF */,
 				1C31EF8F13E396C800CC3E87 /* Frameworks */,
 				1C31EF8D13E396C700CC3E87 /* Products */,
@@ -137,6 +149,8 @@
 		1C31EF8F13E396C800CC3E87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1CE6CFBF1404AEC900EB2E0A /* AudioToolbox.framework */,
+				1C125B0514D90F4500695103 /* AVFoundation.framework */,
 				1C31EFBA13E3A3F500CC3E87 /* CoreLocation.framework */,
 				1C31EFB813E39FC000CC3E87 /* MapKit.framework */,
 				1C31EF9013E396C800CC3E87 /* UIKit.framework */,
@@ -149,34 +163,37 @@
 		1C31EF9613E396C800CC3E87 /* CityChurchSF */ = {
 			isa = PBXGroup;
 			children = (
+				1C3A362814B2984600648251 /* ChurchBlog.h */,
+				1C3A362914B2984600648251 /* ChurchBlog.m */,
+				1C3A362A14B2984600648251 /* ChurchBlog.xib */,
+				1C31EF9C13E396C800CC3E87 /* CityChurchSF-Prefix.pch */,
+				1C31EF9D13E396C800CC3E87 /* main.m */,
+				1CDDD4E1148C121300CA52E1 /* ViewOne.h */,
+				1CDDD4E2148C121300CA52E1 /* ViewOne.m */,
+				1CDDD4E3148C121300CA52E1 /* ViewOne.xib */,
+				1CDDD4E4148C121300CA52E1 /* ViewTwo.h */,
+				1CDDD4E5148C121300CA52E1 /* ViewTwo.m */,
+				1CDDD4E6148C121300CA52E1 /* ViewTwo.xib */,
+				1CDDD4DB148C119000CA52E1 /* RootView.h */,
+				1CDDD4DC148C119000CA52E1 /* RootView.m */,
+				1CDDD4DD148C119000CA52E1 /* RootView.xib */,
 				1C31EF9F13E396C800CC3E87 /* CityChurchSFAppDelegate.h */,
 				1C31EFA013E396C800CC3E87 /* CityChurchSFAppDelegate.m */,
 				1C31EFA213E396C800CC3E87 /* MainWindow.xib */,
 				1CF8EEC21420698F00E7E6BF /* PlaySermon.xib */,
 				1C31EF9713E396C800CC3E87 /* Supporting Files */,
-				1C31EFAA13E3984A00CC3E87 /* CityHomePage.h */,
-				1C31EFAB13E3984A00CC3E87 /* CityHomePage.m */,
-				1C31EFAC13E3984A00CC3E87 /* CityHomePage.xib */,
 				1C31EFB313E39D9C00CC3E87 /* ServiceLocations.h */,
 				1C31EFB413E39D9D00CC3E87 /* ServiceLocations.m */,
 				1C31EFB513E39D9D00CC3E87 /* ServiceLocations.xib */,
 				1C31EFC013E3B88200CC3E87 /* CityMapAnnotation.h */,
 				1C31EFC113E3B88200CC3E87 /* CityMapAnnotation.m */,
-				1C31EFC613E48CE800CC3E87 /* CityChurchMedia.h */,
-				1C31EFC713E48CE800CC3E87 /* CityChurchMedia.m */,
-				1C31EFC813E48CE800CC3E87 /* CityChurchMedia.xib */,
-				1C3C2D851418426F00A13663 /* ChurchCalendar.h */,
-				1C3C2D861418426F00A13663 /* ChurchCalendar.m */,
 				1CF8EEBD14205E9200E7E6BF /* FeedParser.h */,
 				1CF8EEBE14205E9200E7E6BF /* FeedParser.m */,
 				1CF8EEC01420698F00E7E6BF /* PlaySermon.h */,
 				1CF8EEC11420698F00E7E6BF /* PlaySermon.m */,
-				1C595DB81429AE3F006E6F4E /* IBTableController.h */,
-				1C595DB91429AE40006E6F4E /* IBTableController.m */,
-				1C595DBA1429AE40006E6F4E /* IBTableController.xib */,
-				1CE52A061432444600F32D6C /* ChurchContacts.h */,
-				1CE52A071432444600F32D6C /* ChurchContacts.m */,
-				1CE52A081432444600F32D6C /* ChurchContacts.xib */,
+				1C788BF314AB9784006F9483 /* CommunityGroup.h */,
+				1C788BF414AB9785006F9483 /* CommunityGroup.m */,
+				1C788BF514AB9785006F9483 /* CommunityGroup.xib */,
 			);
 			path = CityChurchSF;
 			sourceTree = "<group>";
@@ -184,20 +201,24 @@
 		1C31EF9713E396C800CC3E87 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1CCCD2D7142EDFC000495CD2 /* Default.png */,
-				1CCCD2D5142EDECB00495CD2 /* icon.png */,
+				1CE97C2414EE2BF50063684D /* forward.png */,
+				1CE97C2514EE2BF50063684D /* pause.png */,
+				1CE97C2614EE2BF50063684D /* play.png */,
+				1CE97C2714EE2BF50063684D /* rewind.png */,
+				1CE97C2814EE2BF50063684D /* sound_meter_background.png */,
+				1CE97C2914EE2BF50063684D /* sound_meter_glare.png */,
+				1CE97C2A14EE2BF50063684D /* volume_down.png */,
+				1CE97C2B14EE2BF50063684D /* volume_up.png */,
+				1C0813C714B24AA30040F619 /* Icon.png */,
 				1CCCD2CF142ED31D00495CD2 /* ccsf_logo.jpg */,
-				1CF8EED21422F52800E7E6BF /* splash.png */,
-				1CF8EEBA14205C7E00E7E6BF /* newspaper.png */,
-				1C31EFCB13E48FBF00CC3E87 /* speaker.png */,
-				1C31EFBE13E3A61F00CC3E87 /* world.png */,
-				1C31EFBC13E3A5FC00CC3E87 /* house.png */,
-				1C31EFB113E39B2100CC3E87 /* CityChurchImage1.png */,
 				1C31EF9813E396C800CC3E87 /* CityChurchSF-Info.plist */,
+				1C3A361914B23FA200648251 /* Calendar.png */,
+				1C31EFB113E39B2100CC3E87 /* CityChurchImage1.png */,
+				1C3A361A14B23FA200648251 /* ContactFlow.png */,
+				1C0813C014B249B10040F619 /* Default.png */,
+				1C3A361B14B23FA200648251 /* Maps2.png */,
+				1C3A361C14B23FA200648251 /* Music.png */,
 				1C31EF9913E396C800CC3E87 /* InfoPlist.strings */,
-				1C31EF9C13E396C800CC3E87 /* CityChurchSF-Prefix.pch */,
-				1C31EF9D13E396C800CC3E87 /* main.m */,
-				1CE52A0B14324BCC00F32D6C /* contacts.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -227,6 +248,9 @@
 /* Begin PBXProject section */
 		1C31EF8313E396C700CC3E87 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 1C31EF8613E396C700CC3E87 /* Build configuration list for PBXProject "CityChurchSF" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -251,22 +275,29 @@
 			files = (
 				1C31EF9B13E396C800CC3E87 /* InfoPlist.strings in Resources */,
 				1C31EFA413E396C800CC3E87 /* MainWindow.xib in Resources */,
-				1C31EFAE13E3984A00CC3E87 /* CityHomePage.xib in Resources */,
 				1C31EFB213E39B2100CC3E87 /* CityChurchImage1.png in Resources */,
 				1C31EFB713E39D9D00CC3E87 /* ServiceLocations.xib in Resources */,
-				1C31EFBD13E3A5FC00CC3E87 /* house.png in Resources */,
-				1C31EFBF13E3A61F00CC3E87 /* world.png in Resources */,
-				1C31EFCA13E48CE800CC3E87 /* CityChurchMedia.xib in Resources */,
-				1C31EFCC13E48FBF00CC3E87 /* speaker.png in Resources */,
-				1CF8EEBB14205C7E00E7E6BF /* newspaper.png in Resources */,
 				1CF8EEC41420698F00E7E6BF /* PlaySermon.xib in Resources */,
-				1CF8EED31422F52800E7E6BF /* splash.png in Resources */,
-				1C595DBC1429AE41006E6F4E /* IBTableController.xib in Resources */,
 				1CCCD2D0142ED31D00495CD2 /* ccsf_logo.jpg in Resources */,
-				1CCCD2D6142EDECC00495CD2 /* icon.png in Resources */,
-				1CCCD2D8142EDFC000495CD2 /* Default.png in Resources */,
-				1CE52A0A1432444600F32D6C /* ChurchContacts.xib in Resources */,
-				1CE52A0C14324BCC00F32D6C /* contacts.strings in Resources */,
+				1CDDD4DF148C119000CA52E1 /* RootView.xib in Resources */,
+				1CDDD4E8148C121300CA52E1 /* ViewOne.xib in Resources */,
+				1CDDD4EA148C121300CA52E1 /* ViewTwo.xib in Resources */,
+				1C788BF714AB9786006F9483 /* CommunityGroup.xib in Resources */,
+				1C3A361E14B23FA200648251 /* Calendar.png in Resources */,
+				1C3A361F14B23FA200648251 /* ContactFlow.png in Resources */,
+				1C3A362014B23FA200648251 /* Maps2.png in Resources */,
+				1C3A362114B23FA200648251 /* Music.png in Resources */,
+				1C0813C114B249B10040F619 /* Default.png in Resources */,
+				1C0813C814B24AA30040F619 /* Icon.png in Resources */,
+				1C3A362C14B2984700648251 /* ChurchBlog.xib in Resources */,
+				1CE97C2C14EE2BF50063684D /* forward.png in Resources */,
+				1CE97C2D14EE2BF50063684D /* pause.png in Resources */,
+				1CE97C2E14EE2BF50063684D /* play.png in Resources */,
+				1CE97C2F14EE2BF50063684D /* rewind.png in Resources */,
+				1CE97C3014EE2BF50063684D /* sound_meter_background.png in Resources */,
+				1CE97C3114EE2BF50063684D /* sound_meter_glare.png in Resources */,
+				1CE97C3214EE2BF50063684D /* volume_down.png in Resources */,
+				1CE97C3314EE2BF50063684D /* volume_up.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,15 +310,15 @@
 			files = (
 				1C31EF9E13E396C800CC3E87 /* main.m in Sources */,
 				1C31EFA113E396C800CC3E87 /* CityChurchSFAppDelegate.m in Sources */,
-				1C31EFAD13E3984A00CC3E87 /* CityHomePage.m in Sources */,
 				1C31EFB613E39D9D00CC3E87 /* ServiceLocations.m in Sources */,
 				1C31EFC213E3B88200CC3E87 /* CityMapAnnotation.m in Sources */,
-				1C31EFC913E48CE800CC3E87 /* CityChurchMedia.m in Sources */,
-				1C3C2D871418426F00A13663 /* ChurchCalendar.m in Sources */,
 				1CF8EEBF14205E9200E7E6BF /* FeedParser.m in Sources */,
 				1CF8EEC31420698F00E7E6BF /* PlaySermon.m in Sources */,
-				1C595DBB1429AE41006E6F4E /* IBTableController.m in Sources */,
-				1CE52A091432444600F32D6C /* ChurchContacts.m in Sources */,
+				1CDDD4DE148C119000CA52E1 /* RootView.m in Sources */,
+				1CDDD4E7148C121300CA52E1 /* ViewOne.m in Sources */,
+				1CDDD4E9148C121300CA52E1 /* ViewTwo.m in Sources */,
+				1C788BF614AB9786006F9483 /* CommunityGroup.m in Sources */,
+				1C3A362B14B2984700648251 /* ChurchBlog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +349,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -326,9 +357,9 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphonesimulator*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -337,13 +368,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -359,8 +390,11 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CityChurchSF/CityChurchSF-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CityChurchSF/CityChurchSF-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -372,8 +406,11 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CityChurchSF/CityChurchSF-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CityChurchSF/CityChurchSF-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

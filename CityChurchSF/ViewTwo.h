@@ -1,15 +1,15 @@
 //
-//  ChurchCalendar.h
-//  CityChurchSF
+//  ViewTwo.h
+//  TestApp
 //
-//  Created by Samuel Sharaf on 9/7/11.
+//  Created by Samuel Sharaf on 10/20/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-
-@interface ChurchCalendar : UITableViewController {
+@interface ViewTwo : UITableViewController 
+{
     //////////////
     UIActivityIndicatorView *activityView;
     NSArray *items;
